@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yzq</title>
+</head>
+<body>
+<form method="POST" action="">
+    {% csrf_token %}
+    用户名:<input type="text" name="user_name"><br>
+    密码:<input type="text" name="user_pwd"><br>
+    <input type="radio" name="gender" value="男" checked>男
+    <input type="radio" name="gender" value="女">女<br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

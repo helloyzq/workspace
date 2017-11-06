@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for i in y %}
+    {% if i == '老人与海' %}
+        <h2><li>{{ i }}</li>真好看</h2>
+    {% else %}
+        <h3><li>{{ i }}</li>不好看</h3>
+    {% endif %}
+
+{% endfor %}
+<hr>
+{% for i,j in x.items %}
+    <li>{{ i }}=={{ j }}</li>
+
+{% endfor %}
+</body>
+</html>
